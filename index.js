@@ -1,8 +1,11 @@
 var tags = require('./tags');
 
 module.exports = function(buffer) {
+  /*
   if (buffer.toString('ascii', 0, 5) !== 'Exif\0')
     throw new Error('Invalid EXIF data: buffer should start with "Exif".');
+    */ 
+  // No.
 
   var bigEndian = null;
   if (buffer[6] === 0x49 && buffer[7] === 0x49)
